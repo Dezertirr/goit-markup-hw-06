@@ -790,7 +790,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- .modal-input:focus {
+ .modal-input:focus,
+ .modal-input:hover {
     border-color: var(--linkscolor);
     outline: transparent;
 }
