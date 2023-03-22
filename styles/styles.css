@@ -812,7 +812,7 @@ border-color: var(--linkscolor);
 }
 
 .modal-item:hover .modal-svg,
-.modal-itemt:focus .modal-svg {
+.modal-itemt:focus .modal-svg{
     fill: var(--linkscolor);
 }
 
