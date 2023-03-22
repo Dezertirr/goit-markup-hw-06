@@ -713,7 +713,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 608px;
     background-color: var(--background);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -786,12 +785,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 40px;
     border-radius: 4px;
     border-color: var(--modal-border);
-    transition-property: border-color;
+    transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover, .modal-input:focus {
+ .modal-input:focus {
     border-color: var(--linkscolor);
     outline: transparent;
 }
@@ -811,8 +810,8 @@ outline: transparent;
 border-color: var(--linkscolor);
 }
 
-.modal-item:hover .modal-svg,
-.modal-itemt:focus .modal-svg{
+.modal-input:focus + .modal-svg,
+.modal-input:hover + .modal-svg{
     fill: var(--linkscolor);
 }
 
@@ -856,17 +855,14 @@ border-color: var(--linkscolor);
     color: var(--customers-bg);
     padding-left: 8px;
     vertical-align: middle;
+    margin-bottom: 24px;
   }
 
   .modal-button-sumbit {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 0 auto;
     text-align: center;
     display: block;
-    position: absolute;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 16px 32px;
     background-color: var(--linkscolor);
     color: var(--background);
